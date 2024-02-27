@@ -7,7 +7,7 @@ The ability to understand the shape of a landscape is valuable in many ways, for
 ## Introduction
 Creating terrain elevation models from single overhead images is an important task with applications ranging from flight planning to modelling water flow to precision farming and forestry. This task has been carried out for many years using LiDAR, which utilizes laser light reflectance to find the distance between a laser’s source and its target. This process requires significant planning and expensive tools. Other ways to find the same information require large series of overlapping images and complicated trigonometric algorithms. With modern improvements in deep learning, simpler, cheaper, and more adaptable methods have become available. In this paper, we will present one of these deep learning methods to map an RGB satellite image pixel-by-pixel to a height map of the area.
 
-<img width="1414" alt="Screen Shot 2022-12-10 at 1 03 54 AM" src="https://user-images.githubusercontent.com/85267950/206842536-64153163-e721-4a4b-8088-3c9176c8d2aa.png">
+![Screenshot 2024-02-17 at 4 10 36 PM](https://github.com/jswomley/cs230-project/assets/85267950/ed60d56d-d961-4ce0-8c25-a867235ba835)
 Figure 1: The model takes RGB images as input and, depending on the task, outputs a normalized or raw elevation map of the same size.
 
 ## Related Work
@@ -24,7 +24,8 @@ The RGB images were drawn from the Landsat satellite, which provides a variety o
 
 Potential limitations of our dataset include lack of diversity of image quality and time of year. Since all of our images are from the same satellite during the same time of year, it may have trouble generating elevation predictions from RGB images taken with different camera settings or at different times of the year. The strength of the dataset lies in its sheer size and diversity of terrain.
 
-<img width="1414" alt="Screen Shot 2022-12-10 at 1 04 22 AM" src="https://user-images.githubusercontent.com/85267950/206842542-11499889-ce98-44fb-8d81-653d6d54248e.png">
+<img width="1414" alt="Scre![Untitled drawing](https://github.com/jswomley/cs230-project/assets/85267950/78eed423-4964-4dd1-b045-9f5fd2cbaa44)
+en Shot 2022-12-10 at 1 04 22 AM" src="https://user-images.githubusercontent.com/85267950/206842542-11499889-ce98-44fb-8d81-653d6d54248e.png">
 Figure 2: RGB image and corresponding height map, normalized to different colorscales for visualization purposes.
 
 ## Data Preprocessing
